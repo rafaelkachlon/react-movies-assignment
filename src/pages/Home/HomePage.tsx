@@ -17,8 +17,8 @@ export const HomePage = () => {
         showLoading();
         const movies = await getMovies();
         setMovies(movies);
-      } catch (error: any) {
-        addToast(error.message, 'error');
+      } catch {
+        addToast('Error fetching movies', 'error');
       } finally {
         hideLoading();
       }

@@ -20,7 +20,7 @@ This project is a simple React-based movie application that uses `json-server` f
 3. Open 2 terminals:
    - In the first terminal, run the `json-server` command:
      ```bash
-     json-server --watch mock/db.json --port 3001
+     npm run server
      ```
    - In the second terminal, run the `dev` command:
      ```bash
