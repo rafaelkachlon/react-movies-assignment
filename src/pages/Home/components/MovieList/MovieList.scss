@@ -1,28 +1,41 @@
 .movie-list {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-  * {
-    color: white;
-  }
 
-  .movie-title{
-    font-size: 1.2rem;
-  }
-  .movie-duration{
-    font-size: 1rem;
-    text-align: left;
-  }
   .movie-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     transition: transform 0.3s;
+    color: #ffffff;
 
     &:hover {
       transform: scale(1.02);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .movie-title {
+      font-size: 1.2rem;
+    }
+
+    .movie-duration {
+      font-size: 1rem;
+    }
+
+    .movie-rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      color: gold;
+    }
+
+    img {
+      max-height: 300px;
     }
   }
 }
