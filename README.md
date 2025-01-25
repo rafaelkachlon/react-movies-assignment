@@ -8,7 +8,7 @@ This project is a simple React-based movie application that uses `json-server` f
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rafaelkachlon/react-movies-assignment
    cd react-movies-assignment
    ```
 
