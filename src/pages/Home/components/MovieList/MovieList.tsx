@@ -11,6 +11,7 @@ export const MovieList = (props: { movies: Movie[] }) => {
         <Link to={`/movies/${movie.id}`} key={movie.id} className="movie-item">
           <img src={movie.poster} alt={movie.title}/>
           <div className="movie-title">{movie.title}</div>
+          <div className="movie-genre">{movie.genre}</div>
           <div className="movie-duration">{movie.duration}</div>
           <div className="movie-rating">
             <StarIcon fontSize="small"/>
