@@ -4,14 +4,16 @@ import { getMovie } from '../../services/movieService.ts';
 import Movie from '../../models/movie.ts';
 import { useToastStore } from '../../stores/toastStore.ts';
 import { useLoaderStore } from '../../stores/loaderStore.ts';
+import './components/MovieDetails/MovieDetails.scss';
+import { MovieDetails } from './components/MovieDetails/MovieDetails.tsx';
+import { Showtimes } from './components/Showtimes/Showtimes.tsx';
 
-
-export const MovieDetailsPage = () => {
+export const MovieShowtimes = () => {
   const { addToast } = useToastStore();
   const { showLoading, hideLoading, isLoading } = useLoaderStore();
   const [movie, setMovie] = useState<Movie | null>(null);
   const [error, setError] = useState<string>();
-  const { movieId } = useParams();
+  const { movieId } = useParams<{ movieId: string }>();
 
   useEffect(() => {
     const fetchMovie = async (): Promise<void> => {
@@ -35,11 +37,22 @@ export const MovieDetailsPage = () => {
     };
     fetchMovie();
   }, [movieId, addToast, hideLoading, showLoading]);
+  if (isLoading) {
+    return null; // Full-page loader is already shown, no need to render anything here
+  }
+
   if (error) {
     return <div>{error}</div>;
   }
 
+  if (!movie) {
+    return <p>Movie details are not available.</p>;
+  }
+  
   return (
-    !isLoading && <>Movie Details of movieId: <pre>{JSON.stringify(movie, null, 2)}</pre> Works!</>
+    <>
+      <MovieDetails movie={movie}/>
+      <Showtimes movieId={movie?.id}/>
+    </>
   );
 };

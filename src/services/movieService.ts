@@ -18,3 +18,11 @@ export const getMovie = async (id: string) => {
   }
   return response.json();
 };
+
+export const getShowtimes = async (movieId: string) => {
+  const response = await fetch(`${BASE_URL}/${movieId}/showtimes`);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch showtimes for movie with ID ${movieId}.`);
+  }
+  return response.json();
+};
