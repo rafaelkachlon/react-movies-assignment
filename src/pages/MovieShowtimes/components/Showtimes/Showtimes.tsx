@@ -26,7 +26,7 @@ export const Showtimes = ({ movieId }: ShowtimesProps) => {
       }
     };
     fetchShowtimes();
-  }, [movieId]);
+  }, [movieId, addToast]);
 
   if (error) {
     return <div>{error}</div>;
