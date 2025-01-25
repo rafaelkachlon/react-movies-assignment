@@ -1,31 +1,15 @@
-import { useEffect, useState } from 'react';
-import { getMovies } from '../../services/movieService.ts';
+import { useEffect } from 'react';
 import { MovieList } from './components/MovieList/MovieList.tsx';
-import { useToastStore } from '../../stores/toastStore.ts';
-import Movie from '../../models/movie.ts';
-import { useLoaderStore } from '../../stores/loaderStore.ts';
+import { useMovieStore } from '../../stores/movieStore.ts';
 
 
 export const HomePage = () => {
-  const { addToast } = useToastStore();
-  const { showLoading, hideLoading } = useLoaderStore();
-  const [movies, setMovies] = useState<Movie[]>([]);
+  const { movies, fetchMovies } = useMovieStore();
 
   useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        showLoading();
-        const movies = await getMovies();
-        setMovies(movies);
-      } catch {
-        addToast('Error fetching movies', 'error');
-      } finally {
-        hideLoading();
-      }
-    };
-
     fetchMovies();
-  }, [addToast, hideLoading, showLoading]);
+  }, [fetchMovies]);
+
   return (
     <>
       <h1>Welcome to the Movie App</h1>
