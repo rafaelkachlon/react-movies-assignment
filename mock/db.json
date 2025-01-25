@@ -1,0 +1,195 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "rating": 8.8,
+      "duration": "148 mins",
+      "description": "A skilled thief leads a team to infiltrate the subconscious.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Dark Knight",
+      "genre": "Action",
+      "rating": 9.0,
+      "duration": "152 mins",
+      "description": "Batman faces the Joker in Gotham City.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Interstellar",
+      "genre": "Sci-Fi",
+      "rating": 8.6,
+      "duration": "169 mins",
+      "description": "A group of explorers travel through a wormhole in space.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Matrix",
+      "genre": "Sci-Fi",
+      "rating": 8.7,
+      "duration": "136 mins",
+      "description": "A computer hacker discovers a hidden reality controlled by machines.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Forrest Gump",
+      "genre": "Drama",
+      "rating": 8.8,
+      "duration": "142 mins",
+      "description": "The story of a man with a big heart who changes the lives of those around him.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Godfather",
+      "genre": "Crime",
+      "rating": 9.2,
+      "duration": "175 mins",
+      "description": "The story of the powerful Corleone crime family.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Pulp Fiction",
+      "genre": "Crime",
+      "rating": 8.9,
+      "duration": "154 mins",
+      "description": "Intersecting stories of crime and redemption in Los Angeles.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "rating": 9.3,
+      "duration": "142 mins",
+      "description": "The inspiring story of hope and friendship in a brutal prison.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Avengers: Endgame",
+      "genre": "Action",
+      "rating": 8.4,
+      "duration": "181 mins",
+      "description": "The Avengers assemble to undo the devastation caused by Thanos.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Parasite",
+      "genre": "Thriller",
+      "rating": 8.6,
+      "duration": "132 mins",
+      "description": "A poor family schemes to infiltrate a wealthy household.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png"
+    },
+    {
+      "id": 11,
+      "title": "Joker",
+      "genre": "Drama",
+      "rating": 8.4,
+      "duration": "122 mins",
+      "description": "A dark origin story of Gotham's iconic villain.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Gladiator",
+      "genre": "Action",
+      "rating": 8.5,
+      "duration": "155 mins",
+      "description": "A betrayed Roman general seeks revenge as a gladiator.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png"
+    },
+    {
+      "id": 13,
+      "title": "Titanic",
+      "genre": "Romance",
+      "rating": 7.9,
+      "duration": "195 mins",
+      "description": "A tragic love story set aboard the ill-fated Titanic.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png"
+    },
+    {
+      "id": 14,
+      "title": "The Lion King",
+      "genre": "Animation",
+      "rating": 8.5,
+      "duration": "88 mins",
+      "description": "The epic journey of Simba, the lion cub who becomes king.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg"
+    },
+    {
+      "id": 15,
+      "title": "The Avengers",
+      "genre": "Action",
+      "rating": 8.0,
+      "duration": "143 mins",
+      "description": "Earth's mightiest heroes unite to save the world.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg"
+    }
+  ],
+  "showtimes": [
+    {
+      "id": 101,
+      "movieId": 1,
+      "theater": "Cinema City A",
+      "startTime": "2025-01-23T15:30:00",
+      "availableSeats": 50,
+      "totalSeats": 100,
+      "tickets": [
+        {
+          "seat": "A1",
+          "status": "Available"
+        },
+        {
+          "seat": "A2",
+          "status": "Booked"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "movieId": 1,
+      "theater": "Cinema City B",
+      "startTime": "2025-01-23T18:30:00",
+      "availableSeats": 30,
+      "totalSeats": 50,
+      "tickets": [
+        {
+          "seat": "B1",
+          "status": "Available"
+        },
+        {
+          "seat": "B2",
+          "status": "Booked"
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "movieId": 2,
+      "theater": "IMAX Downtown",
+      "startTime": "2025-01-23T14:00:00",
+      "availableSeats": 75,
+      "totalSeats": 100,
+      "tickets": [
+        {
+          "seat": "C1",
+          "status": "Available"
+        },
+        {
+          "seat": "C2",
+          "status": "Available"
+        }
+      ]
+    }
+  ]
+}
