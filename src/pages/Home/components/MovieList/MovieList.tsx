@@ -3,7 +3,8 @@ import './MovieList.scss';
 import StarIcon from '@mui/icons-material/Star';
 import { Link } from 'react-router';
 
-export const MovieList = (props: { movies: Movie[] }) => {
+export const MovieList = (props: { movies?: Movie[] }) => {
+  if (!props.movies) return null;
   return (
     <div className="movie-list">
 

@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router';
 import { BookingPage } from '../pages/Booking/BookingPage.tsx';
 import { HomePage } from '../pages/Home/HomePage.tsx';
-import { MovieShowtimes } from '../pages/MovieShowtimes/MovieShowtimes.tsx';
+import { MovieShowtimesPage } from '../pages/MovieShowtimes/MovieShowtimesPage.tsx';
 import { NotFoundPage } from '../pages/NotFound/NotFoundPage.tsx';
 
 export const AppRoutes = () => {
@@ -9,7 +9,7 @@ export const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Navigate to="/movies" replace />} />
       <Route path="/movies" element={<HomePage/>}/>
-      <Route path="/movies/:movieId" element={<MovieShowtimes/>}/>
+      <Route path="/movies/:movieId" element={<MovieShowtimesPage/>}/>
       <Route path="booking/:showtimeId" element={<BookingPage/>}/>
       <Route path="/not-found" element={<NotFoundPage/>}/>
       <Route path="*" element={<NotFoundPage/>}/>
