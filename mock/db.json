@@ -142,17 +142,16 @@
       "movieId": 1,
       "theater": "Cinema City A",
       "startTime": "2025-01-23T15:30:00",
-      "availableSeats": 50,
-      "totalSeats": 100,
-      "tickets": [
-        {
-          "seat": "A1",
-          "status": "Available"
-        },
-        {
-          "seat": "A2",
-          "status": "Booked"
-        }
+      "seats": [
+        {"seat": "A1", "status": "Available"},
+        {"seat": "A2", "status": "Available"},
+        {"seat": "A3", "status": "Available"},
+        {"seat": "A4", "status": "Available"},
+        {"seat": "A5", "status": "Available"},
+        {"seat": "A6", "status": "Available"},
+        {"seat": "A7", "status": "Available"},
+        {"seat": "A8", "status": "Available"},
+        {"seat": "A9", "status": "Available"}
       ]
     },
     {
@@ -160,17 +159,16 @@
       "movieId": 1,
       "theater": "Cinema City B",
       "startTime": "2025-01-23T18:30:00",
-      "availableSeats": 30,
-      "totalSeats": 50,
-      "tickets": [
-        {
-          "seat": "B1",
-          "status": "Available"
-        },
-        {
-          "seat": "B2",
-          "status": "Booked"
-        }
+      "seats": [
+        {"seat": "B1", "status": "Available"},
+        {"seat": "B2", "status": "Available"},
+        {"seat": "B3", "status": "Available"},
+        {"seat": "B4", "status": "Available"},
+        {"seat": "B5", "status": "Available"},
+        {"seat": "B6", "status": "Available"},
+        {"seat": "B7", "status": "Available"},
+        {"seat": "B8", "status": "Available"},
+        {"seat": "B9", "status": "Available"}
       ]
     },
     {
@@ -178,17 +176,16 @@
       "movieId": 2,
       "theater": "IMAX Downtown",
       "startTime": "2025-01-23T14:00:00",
-      "availableSeats": 75,
-      "totalSeats": 100,
-      "tickets": [
-        {
-          "seat": "C1",
-          "status": "Available"
-        },
-        {
-          "seat": "C2",
-          "status": "Available"
-        }
+      "seats": [
+        {"seat": "C1", "status": "Available"},
+        {"seat": "C2", "status": "Available"},
+        {"seat": "C3", "status": "Available"},
+        {"seat": "C4", "status": "Available"},
+        {"seat": "C5", "status": "Available"},
+        {"seat": "C6", "status": "Available"},
+        {"seat": "C7", "status": "Available"},
+        {"seat": "C8", "status": "Available"},
+        {"seat": "C9", "status": "Available"}
       ]
     }
   ]

@@ -1,4 +1,4 @@
-import Ticket from './ticket.ts';
+import Seat from './ticket.ts';
 
 export default interface Showtime {
   id: string;
@@ -7,6 +7,6 @@ export default interface Showtime {
   startTime: string;
   availableSeats: number;
   totalSeats: number;
-  tickets: Ticket[];
+  seats: Seat[];
 }
 

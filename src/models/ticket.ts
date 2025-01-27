@@ -1,4 +1,4 @@
-export default interface Ticket {
+export default interface Seat {
   seat: string;
-  status: string;
+  status: 'Available' | 'Booked';
 }

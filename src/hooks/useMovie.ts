@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLoaderStore } from '../stores/loaderStore';
 import { useToastStore } from '../stores/toastStore';
-import { getMovie } from '../services/movieService';
+import { getMovieById } from '../services/movieService';
 import Movie from '../models/movie';
 
 interface UseMovieResult {
@@ -19,7 +19,7 @@ const useMovie: (movieId: string) => UseMovieResult = (movieId: string): UseMovi
     const fetchMovie = async () => {
       showLoading();
       try {
-        const data = await getMovie(movieId);
+        const data = await getMovieById(movieId);
         setMovie(data);
       } catch (err: any) {
         let errorMessage = 'Something went wrong while fetching the movie.';
