@@ -13,7 +13,7 @@
       "id": 2,
       "title": "The Dark Knight",
       "genre": "Action",
-      "rating": 9.0,
+      "rating": 9,
       "duration": "152 mins",
       "description": "Batman faces the Joker in Gotham City.",
       "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
@@ -130,7 +130,7 @@
       "id": 15,
       "title": "The Avengers",
       "genre": "Action",
-      "rating": 8.0,
+      "rating": 8,
       "duration": "143 mins",
       "description": "Earth's mightiest heroes unite to save the world.",
       "poster": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg"
@@ -143,15 +143,46 @@
       "theater": "Cinema City A",
       "startTime": "2025-01-23T15:30:00",
       "seats": [
-        {"seat": "A1", "status": "Available"},
-        {"seat": "A2", "status": "Available"},
-        {"seat": "A3", "status": "Available"},
-        {"seat": "A4", "status": "Available"},
-        {"seat": "A5", "status": "Available"},
-        {"seat": "A6", "status": "Available"},
-        {"seat": "A7", "status": "Available"},
-        {"seat": "A8", "status": "Available"},
-        {"seat": "A9", "status": "Available"}
+        {
+          "seat": "A1",
+          "status": "Sold"
+        },
+        {
+          "seat": "A2",
+          "status": "Sold"
+        },
+        {
+          "seat": "A3",
+          "status": "Sold"
+        },
+        {
+          "seat": "A4",
+          "status": "Available"
+        },
+        {
+          "seat": "A5",
+          "status": "Available"
+        },
+        {
+          "seat": "A6",
+          "status": "Available"
+        },
+        {
+          "seat": "A7",
+          "status": "Available"
+        },
+        {
+          "seat": "A8",
+          "status": "Available"
+        },
+        {
+          "seat": "A9",
+          "status": "Available"
+        },
+        {
+          "seat": "A10",
+          "status": "Available"
+        }
       ]
     },
     {
@@ -160,15 +191,66 @@
       "theater": "Cinema City B",
       "startTime": "2025-01-23T18:30:00",
       "seats": [
-        {"seat": "B1", "status": "Available"},
-        {"seat": "B2", "status": "Available"},
-        {"seat": "B3", "status": "Available"},
-        {"seat": "B4", "status": "Available"},
-        {"seat": "B5", "status": "Available"},
-        {"seat": "B6", "status": "Available"},
-        {"seat": "B7", "status": "Available"},
-        {"seat": "B8", "status": "Available"},
-        {"seat": "B9", "status": "Available"}
+        {
+          "seat": "B1",
+          "status": "Available"
+        },
+        {
+          "seat": "B2",
+          "status": "Available"
+        },
+        {
+          "seat": "B3",
+          "status": "Available"
+        },
+        {
+          "seat": "B4",
+          "status": "Available"
+        },
+        {
+          "seat": "B5",
+          "status": "Available"
+        },
+        {
+          "seat": "B6",
+          "status": "Available"
+        },
+        {
+          "seat": "B7",
+          "status": "Available"
+        },
+        {
+          "seat": "B8",
+          "status": "Available"
+        },
+        {
+          "seat": "B9",
+          "status": "Available"
+        },
+        {
+          "seat": "B10",
+          "status": "Available"
+        },
+        {
+          "seat": "B11",
+          "status": "Available"
+        },
+        {
+          "seat": "B12",
+          "status": "Available"
+        },
+        {
+          "seat": "B13",
+          "status": "Available"
+        },
+        {
+          "seat": "B14",
+          "status": "Available"
+        },
+        {
+          "seat": "B15",
+          "status": "Available"
+        }
       ]
     },
     {
@@ -177,15 +259,298 @@
       "theater": "IMAX Downtown",
       "startTime": "2025-01-23T14:00:00",
       "seats": [
-        {"seat": "C1", "status": "Available"},
-        {"seat": "C2", "status": "Available"},
-        {"seat": "C3", "status": "Available"},
-        {"seat": "C4", "status": "Available"},
-        {"seat": "C5", "status": "Available"},
-        {"seat": "C6", "status": "Available"},
-        {"seat": "C7", "status": "Available"},
-        {"seat": "C8", "status": "Available"},
-        {"seat": "C9", "status": "Available"}
+        {
+          "seat": "C1",
+          "status": "Available"
+        },
+        {
+          "seat": "C2",
+          "status": "Available"
+        },
+        {
+          "seat": "C3",
+          "status": "Available"
+        },
+        {
+          "seat": "C4",
+          "status": "Available"
+        },
+        {
+          "seat": "C5",
+          "status": "Available"
+        },
+        {
+          "seat": "C6",
+          "status": "Available"
+        },
+        {
+          "seat": "C7",
+          "status": "Available"
+        },
+        {
+          "seat": "C8",
+          "status": "Available"
+        },
+        {
+          "seat": "C9",
+          "status": "Available"
+        },
+        {
+          "seat": "C10",
+          "status": "Available"
+        },
+        {
+          "seat": "C11",
+          "status": "Available"
+        },
+        {
+          "seat": "C12",
+          "status": "Available"
+        },
+        {
+          "seat": "C13",
+          "status": "Available"
+        },
+        {
+          "seat": "C14",
+          "status": "Available"
+        },
+        {
+          "seat": "C15",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "movieId": 2,
+      "theater": "IMAX Downtown",
+      "startTime": "2025-01-23T17:00:00",
+      "seats": [
+        {
+          "seat": "D1",
+          "status": "Available"
+        },
+        {
+          "seat": "D2",
+          "status": "Available"
+        },
+        {
+          "seat": "D3",
+          "status": "Available"
+        },
+        {
+          "seat": "D4",
+          "status": "Available"
+        },
+        {
+          "seat": "D5",
+          "status": "Available"
+        },
+        {
+          "seat": "D6",
+          "status": "Available"
+        },
+        {
+          "seat": "D7",
+          "status": "Available"
+        },
+        {
+          "seat": "D8",
+          "status": "Available"
+        },
+        {
+          "seat": "D9",
+          "status": "Available"
+        },
+        {
+          "seat": "D10",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 301,
+      "movieId": 3,
+      "theater": "Cinema City C",
+      "startTime": "2025-01-23T20:00:00",
+      "seats": [
+        {
+          "seat": "E1",
+          "status": "Available"
+        },
+        {
+          "seat": "E2",
+          "status": "Available"
+        },
+        {
+          "seat": "E3",
+          "status": "Available"
+        },
+        {
+          "seat": "E4",
+          "status": "Available"
+        },
+        {
+          "seat": "E5",
+          "status": "Available"
+        },
+        {
+          "seat": "E6",
+          "status": "Available"
+        },
+        {
+          "seat": "E7",
+          "status": "Available"
+        },
+        {
+          "seat": "E8",
+          "status": "Available"
+        },
+        {
+          "seat": "E9",
+          "status": "Available"
+        },
+        {
+          "seat": "E10",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 302,
+      "movieId": 3,
+      "theater": "Cinema City C",
+      "startTime": "2025-01-23T23:00:00",
+      "seats": [
+        {
+          "seat": "F1",
+          "status": "Available"
+        },
+        {
+          "seat": "F2",
+          "status": "Available"
+        },
+        {
+          "seat": "F3",
+          "status": "Available"
+        },
+        {
+          "seat": "F4",
+          "status": "Available"
+        },
+        {
+          "seat": "F5",
+          "status": "Available"
+        },
+        {
+          "seat": "F6",
+          "status": "Available"
+        },
+        {
+          "seat": "F7",
+          "status": "Available"
+        },
+        {
+          "seat": "F8",
+          "status": "Available"
+        },
+        {
+          "seat": "F9",
+          "status": "Available"
+        },
+        {
+          "seat": "F10",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 401,
+      "movieId": 4,
+      "theater": "IMAX Downtown",
+      "startTime": "2025-01-24T15:00:00",
+      "seats": [
+        {
+          "seat": "G1",
+          "status": "Sold"
+        },
+        {
+          "seat": "G2",
+          "status": "Available"
+        },
+        {
+          "seat": "G3",
+          "status": "Available"
+        },
+        {
+          "seat": "G4",
+          "status": "Available"
+        },
+        {
+          "seat": "G5",
+          "status": "Available"
+        },
+        {
+          "seat": "G6",
+          "status": "Available"
+        },
+        {
+          "seat": "G7",
+          "status": "Sold"
+        },
+        {
+          "seat": "G8",
+          "status": "Available"
+        },
+        {
+          "seat": "G9",
+          "status": "Available"
+        },
+        {
+          "seat": "G10",
+          "status": "Available"
+        },
+        {
+          "seat": "G11",
+          "status": "Available"
+        },
+        {
+          "seat": "G12",
+          "status": "Available"
+        },
+        {
+          "seat": "G13",
+          "status": "Sold"
+        },
+        {
+          "seat": "G14",
+          "status": "Available"
+        },
+        {
+          "seat": "G15",
+          "status": "Available"
+        },
+        {
+          "seat": "G16",
+          "status": "Available"
+        },
+        {
+          "seat": "G17",
+          "status": "Available"
+        },
+        {
+          "seat": "G18",
+          "status": "Available"
+        },
+        {
+          "seat": "G19",
+          "status": "Sold"
+        },
+        {
+          "seat": "G20",
+          "status": "Available"
+        }
       ]
     }
   ]
