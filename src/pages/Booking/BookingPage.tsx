@@ -11,6 +11,7 @@ import BookingActions from './components/BookingActions/BookingActions.tsx';
 import useMovies from '../../hooks/useMovies.ts';
 import Movie from '../../models/movie.model.ts';
 import './BookingPage.scss';
+import { BackButton } from '../../components/BackButton/BackButton.tsx';
 
 export const BookingPage = () => {
   const { movieId, showtimeId } = useParams<{ movieId: string; showtimeId: string }>();
@@ -61,6 +62,7 @@ export const BookingPage = () => {
   const movie: Movie | undefined = getMovieById(Number(movieId));
   return (
     <div className="booking-page">
+      <BackButton to={-1}/>
       <MovieDetails movie={movie}/>
       <h1>Booking for {showtime.theater}</h1>
       <p>

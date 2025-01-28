@@ -1,5 +1,6 @@
 import Movie from '../../models/movie.model.ts';
 import './MovieDetails.scss';
+import { Rating } from '../Rating/Rating.tsx';
 
 interface MovieDetailsProps {
   movie: Movie | undefined;
@@ -18,7 +19,7 @@ export const MovieDetails = ({ movie }: MovieDetailsProps) => {
         <h1>{movie?.title}</h1>
         <p>{movie?.description}</p>
         <p>Duration: {movie?.duration}</p>
-        <p>Rating: {movie?.rating}</p>
+        <Rating rating={movie.rating}></Rating>
       </div>
     </div>
   );

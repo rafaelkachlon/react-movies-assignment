@@ -25,16 +25,9 @@
       font-size: 1rem;
     }
 
-    .movie-rating {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      color: gold;
-    }
-
     img {
       max-height: 300px;
+      border-radius: 10px;
     }
   }
 }

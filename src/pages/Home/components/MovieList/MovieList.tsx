@@ -1,7 +1,7 @@
 import Movie from '../../../../models/movie.model.ts';
 import './MovieList.scss';
-import StarIcon from '@mui/icons-material/Star';
 import { Link } from 'react-router';
+import { Rating } from '../../../../components/Rating/Rating.tsx';
 
 export const MovieList = (props: { movies?: Movie[] }) => {
   if (!props.movies) return null;
@@ -14,10 +14,7 @@ export const MovieList = (props: { movies?: Movie[] }) => {
           <div className="movie-title">{movie.title}</div>
           <div className="movie-genre">{movie.genre}</div>
           <div className="movie-duration">{movie.duration}</div>
-          <div className="movie-rating">
-            <StarIcon fontSize="small"/>
-            <span>{movie.rating}</span>
-          </div>
+          <Rating rating={movie.rating}></Rating>
         </Link>
       ))}
     </div>

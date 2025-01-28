@@ -20,7 +20,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <h1>Welcome to the Movie App</h1>
+      <h1>Cinema Express</h1>
 
       <InputControls searchTerm={searchTerm}
                      onSearchChange={setSearchTerm}
