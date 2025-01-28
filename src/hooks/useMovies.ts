@@ -3,30 +3,29 @@ import { useLoaderStore } from '../stores/loaderStore';
 import { useToastStore } from '../stores/toastStore';
 import { useMovieStore } from '../stores/movieStore.ts';
 import { getMovies } from '../services/movieService';
-import Movie from '../models/movie';
+import Movie from '../models/movie.model.ts';
 
-// Define the return type for the hook
 interface UseMoviesResult {
   movies: Movie[] | null;
   error: string | null;
 }
 
 const useMovies = (): UseMoviesResult => {
-  const { movies, isMoviesCached, cacheMovies } = useMovieStore();
+  const { movies, hasFetchedMovies, setMovies } = useMovieStore();
   const [error, setError] = useState<string | null>(null);
   const { showLoading, hideLoading } = useLoaderStore();
   const { addToast } = useToastStore();
 
   useEffect(() => {
     const fetchMovies = async () => {
-      if (isMoviesCached) return;
+      if (hasFetchedMovies) return;
 
       showLoading();
       try {
         const movies: Movie[] = await getMovies();
-        cacheMovies(movies);
+        setMovies(movies);
       } catch {
-        const errorMessage = 'Failed to fetch movies.';
+        const errorMessage: string = 'Failed to fetch movies.';
         setError(errorMessage);
         addToast(errorMessage, 'error');
       } finally {
@@ -35,7 +34,7 @@ const useMovies = (): UseMoviesResult => {
     };
 
     fetchMovies();
-  }, [isMoviesCached, cacheMovies, showLoading, hideLoading, addToast]);
+  }, [hasFetchedMovies, setMovies, showLoading, hideLoading, addToast]);
 
   return { movies, error };
 };

@@ -1,4 +1,4 @@
-import Movie from '../../../../models/movie.ts';
+import Movie from '../../models/movie.model.ts';
 import './MovieDetails.scss';
 
 interface MovieDetailsProps {

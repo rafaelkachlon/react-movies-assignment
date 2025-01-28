@@ -1,14 +1,14 @@
-import Movie from '../models/movie.ts';
+import Movie from '../models/movie.model.ts';
 import { create } from 'zustand';
 
 interface MovieState {
   movies: Movie[];
-  isMoviesCached: boolean;
-  cacheMovies: (movies: Movie[]) => void;
+  setMovies: (movies: Movie[]) => void;
+  hasFetchedMovies: boolean;
 }
 
 export const useMovieStore = create<MovieState>((set) => ({
   movies: [],
-  isMoviesCached: false,
-  cacheMovies: (movies: Movie[]) => set({ movies, isMoviesCached: true })
+  hasFetchedMovies: false,
+  setMovies: (movies: Movie[]) => set({ movies, hasFetchedMovies: true })
 }));

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { MovieList } from './components/MovieList/MovieList.tsx';
 import { InputControls } from './components/InputControls/InputControls.tsx';
 import useMovies from '../../hooks/useMovies.ts';
-import Movie from '../../models/movie.ts';
+import Movie from '../../models/movie.model.ts';
 import './HomePage.scss';
 
 export const HomePage = () => {

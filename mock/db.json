@@ -145,42 +145,52 @@
       "seats": [
         {
           "seat": "A1",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "A2",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "A3",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "A4",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "A5",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "A6",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "A7",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "A8",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "A9",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "A10",
+          "price": 10,
           "status": "Available"
         }
       ]
@@ -193,62 +203,77 @@
       "seats": [
         {
           "seat": "B1",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "B2",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "B3",
-          "status": "Available"
+          "price": 10,
+          "status": "Sold"
         },
         {
           "seat": "B4",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B5",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B6",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B7",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B8",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B9",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B10",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B11",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B12",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B13",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B14",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "B15",
+          "price": 10,
           "status": "Available"
         }
       ]
@@ -261,62 +286,77 @@
       "seats": [
         {
           "seat": "C1",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C2",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C3",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C4",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C5",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C6",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C7",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C8",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C9",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C10",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C11",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C12",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C13",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C14",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "C15",
+          "price": 10,
           "status": "Available"
         }
       ]
@@ -329,42 +369,52 @@
       "seats": [
         {
           "seat": "D1",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D2",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D3",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D4",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D5",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D6",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D7",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D8",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D9",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "D10",
+          "price": 10,
           "status": "Available"
         }
       ]
@@ -377,42 +427,52 @@
       "seats": [
         {
           "seat": "E1",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E2",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E3",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E4",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E5",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E6",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E7",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E8",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E9",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "E10",
+          "price": 10,
           "status": "Available"
         }
       ]
@@ -425,42 +485,52 @@
       "seats": [
         {
           "seat": "F1",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F2",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F3",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F4",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F5",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F6",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F7",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F8",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F9",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "F10",
+          "price": 10,
           "status": "Available"
         }
       ]
@@ -473,82 +543,102 @@
       "seats": [
         {
           "seat": "G1",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "G2",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G3",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G4",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G5",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G6",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G7",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "G8",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G9",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G10",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G11",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G12",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G13",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "G14",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G15",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G16",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G17",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G18",
+          "price": 10,
           "status": "Available"
         },
         {
           "seat": "G19",
+          "price": 10,
           "status": "Sold"
         },
         {
           "seat": "G20",
+          "price": 10,
           "status": "Available"
         }
       ]

@@ -1,4 +1,4 @@
-import Movie from '../../../../models/movie.ts';
+import Movie from '../../../../models/movie.model.ts';
 import './MovieList.scss';
 import StarIcon from '@mui/icons-material/Star';
 import { Link } from 'react-router';

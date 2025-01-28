@@ -1,3 +1,5 @@
+import Showtime from '../models/showtime.model';
+
 const BASE_URL: string = 'http://localhost:3001';
 const MOVIES_ENDPOINT: string = `${BASE_URL}/movies`;
 const SHOWTIMES_ENDPOINT: string = `${BASE_URL}/showtimes`;
@@ -21,7 +23,7 @@ export const getMovieById = async (id: string) => {
   return response.json();
 };
 
-export const getShowtimes = async (movieId: string) => {
+export const getShowtimes = async (movieId: number) => {
   const response = await fetch(`${MOVIES_ENDPOINT}/${movieId}/showtimes`);
   if (!response.ok) {
     throw new Error(`Failed to fetch showtimes for movie with ID ${movieId}.`);
@@ -37,5 +39,21 @@ export const getShowtimeById = async (showtimeId: string) => {
   if (!response.ok) {
     throw new Error(`Failed to fetch showtime with ID ${showtimeId}.`);
   }
+  return response.json();
+};
+
+export const updateShowtime = async (showtimeId: number, updatedShowtime: Showtime) => {
+  const response = await fetch(`http://localhost:3001/showtimes/${showtimeId}`, {
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    method: 'PUT',
+    body: JSON.stringify(updatedShowtime),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to update showtime on the server.');
+  }
+
   return response.json();
 };

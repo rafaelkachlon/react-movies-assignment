@@ -1,30 +1,35 @@
-import { useState, useEffect } from 'react';
-import Showtime from '../models/showtime';
-import { getShowtimes } from '../services/movieService';
-import { useToastStore } from '../stores/toastStore';
+  import { useEffect, useState } from 'react';
+  import { getShowtimes } from '../services/movieService';
+  import { useShowtimeStore } from '../stores/seatsStore';
+  import Showtime from '../models/showtime.model';
+  import { useLoaderStore } from '../stores/loaderStore';
 
-const useShowtimes = (movieId: string | undefined) => {
-  const [showtimes, setShowtimes] = useState<Showtime[]>([]);
-  const [error, setError] = useState<string | null>(null);
-  const { addToast } = useToastStore();
+  const useShowtimes = (movieId: number) => {
+    const [error, setError] = useState<string | null>(null);
+    const { showtimes, setShowtimes } = useShowtimeStore();
+    const { showLoading, hideLoading } = useLoaderStore();
 
-  useEffect(() => {
-    const fetchShowtimes = async () => {
-      try {
-        if (movieId) {
-          const fetchedShowtimes = await getShowtimes(movieId);
-          setShowtimes(fetchedShowtimes);
+    const filteredShowtimes: Showtime[] = showtimes.filter((showtime) => showtime.movieId === movieId);
+
+    useEffect(() => {
+      const fetchShowtimes = async () => {
+        showLoading();
+        try {
+          if (movieId && filteredShowtimes.length === 0) {
+            const fetchedShowtimes: Showtime[] = await getShowtimes(movieId);
+            setShowtimes(fetchedShowtimes);
+          }
+        } catch {
+          setError('Failed to fetch showtimes.');
+        } finally {
+          hideLoading();
         }
-      } catch {
-        const message: string = 'Something went wrong while fetching the showtimes.';
-        setError(message);
-        addToast(message, 'error');
-      }
-    };
-    fetchShowtimes();
-  }, [movieId, addToast]);
+      };
 
-  return { showtimes, error };
-};
+      fetchShowtimes();
+    }, [movieId, showtimes.length, setShowtimes, showLoading, filteredShowtimes.length, hideLoading]);
 
-export default useShowtimes;
+    return { showtimes: filteredShowtimes, error };
+  };
+
+  export default useShowtimes;
