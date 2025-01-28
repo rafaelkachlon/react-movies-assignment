@@ -23,7 +23,7 @@ export const getMovieById = async (id: string) => {
   return response.json();
 };
 
-export const getShowtimes = async (movieId: number) => {
+export const getShowtimes = async (movieId: number): Promise<Showtime[]> => {
   const response = await fetch(`${MOVIES_ENDPOINT}/${movieId}/showtimes`);
   if (!response.ok) {
     throw new Error(`Failed to fetch showtimes for movie with ID ${movieId}.`);
@@ -31,7 +31,7 @@ export const getShowtimes = async (movieId: number) => {
   return response.json();
 };
 
-export const getShowtimeById = async (showtimeId: string) => {
+export const getShowtimeById = async (showtimeId: number): Promise<Showtime> => {
   const response = await fetch(`${SHOWTIMES_ENDPOINT}/${showtimeId}`);
   if (response.status === 404) {
     throw new Error(`Showtime with ID ${showtimeId} not found (404).`);

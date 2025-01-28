@@ -6,8 +6,8 @@ import useMovies from '../../hooks/useMovies.ts';
 
 export const MovieShowtimesPage = () => {
   const { movieId } = useParams<{ movieId: string }>();
-  const { movies } = useMovies();
-  const movie = movies?.find((movie) => movie.id === Number(movieId));
+  const { getMovieById } = useMovies();
+  const movie = getMovieById(Number(movieId));
 
 
   if (!movie) {
@@ -16,8 +16,8 @@ export const MovieShowtimesPage = () => {
 
   return (
     <>
-      <MovieDetails movie={movie} />
-      <Showtimes movieId={movie?.id} />
+      <MovieDetails movie={movie}/>
+      <Showtimes movieId={movie?.id}/>
     </>
   );
 };

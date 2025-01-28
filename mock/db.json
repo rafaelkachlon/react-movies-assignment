@@ -438,7 +438,7 @@
         {
           "seat": "E3",
           "price": 10,
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "E4",
@@ -448,7 +448,7 @@
         {
           "seat": "E5",
           "price": 10,
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "E6",
@@ -463,17 +463,17 @@
         {
           "seat": "E8",
           "price": 10,
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "E9",
           "price": 10,
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "E10",
           "price": 10,
-          "status": "Available"
+          "status": "Sold"
         }
       ]
     },

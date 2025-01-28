@@ -1,0 +1,38 @@
+.seat-map {
+  margin-top: 20px;
+
+  .seats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+    max-width: 50%;
+    justify-self: center;
+  }
+
+  .seat {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0;
+
+    &.available {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    &.sold {
+      background-color: #f44336;
+      color: #fff;
+      cursor: not-allowed;
+    }
+
+    &.selected {
+      background-color: #2196f3;
+      color: #fff;
+    }
+  }
+}

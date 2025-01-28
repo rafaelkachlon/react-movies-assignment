@@ -11,7 +11,7 @@ export const HomePage = () => {
   const [selectedRatingRange, setSelectedRatingRange] = useState<[number, number]>([0, 10]);
   const { movies, error } = useMovies();
 
-  const filteredMovies = movies?.filter((movie: Movie) => {
+  const filteredMovies = Object.values(movies || {})?.filter((movie: Movie) => {
     const matchesTitle = movie.title.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesGenre = selectedGenre ? movie.genre === selectedGenre : true;
     const matchesRating = movie.rating >= selectedRatingRange[0] && movie.rating <= selectedRatingRange[1];

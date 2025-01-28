@@ -2,7 +2,7 @@ import Movie from '../../models/movie.model.ts';
 import './MovieDetails.scss';
 
 interface MovieDetailsProps {
-  movie: Movie | null;
+  movie: Movie | undefined;
 }
 
 export const MovieDetails = ({ movie }: MovieDetailsProps) => {
