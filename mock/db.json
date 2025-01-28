@@ -157,15 +157,15 @@
         },
         {
           "seat": "A4",
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "A5",
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "A6",
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "A7",
@@ -177,7 +177,7 @@
         },
         {
           "seat": "A9",
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "A10",
@@ -193,11 +193,11 @@
       "seats": [
         {
           "seat": "B1",
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "B2",
-          "status": "Available"
+          "status": "Sold"
         },
         {
           "seat": "B3",
