@@ -1,14 +1,14 @@
 import './App.css';
 import AppRoutes from './routes/AppRoutes.tsx';
-import { ToastContainer } from './components/ToastContainer.tsx';
-import { GlobalLoader } from './components/GlobalLoader.tsx';
+import { Toast } from './components/Toast/Toast.tsx';
+import { GlobalLoader } from './components/GlobalLoader/GlobalLoader.tsx';
 
 function App() {
 
   return (
     <>
       <GlobalLoader/>
-      <ToastContainer/>
+      <Toast/>
       <AppRoutes/>
     </>
   );
